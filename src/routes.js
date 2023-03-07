@@ -1,6 +1,6 @@
 app.post('/api/products', async (req, res) => {
     try {
-        const payload = req.body
+        const payload = req.body 
 
         for (const item of payload) {
             const product = await Inventry.findOne({ productId: item.productId });
